@@ -7,7 +7,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
-    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -21,16 +20,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'courses',
-        path: `${__dirname}/src/course/`,
+        name: 'src',
+        path: `${__dirname}/src/`,
       }
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'lessons',
-        path: `${__dirname}/src/lesson/`,
-      }
-    },
+    "gatsby-plugin-netlify-cms"
   ],
 }
