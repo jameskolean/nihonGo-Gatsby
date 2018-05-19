@@ -6,48 +6,57 @@ import Img from "gatsby-image";
 
 const HeaderWrapper = styled.div `
   height: 70vh;
-  background: blue;
+  background: black;
   margin-bottom: 1.45rem;
   overflow: hidden;
   position: relative;
-  opacity: 0.8;
   h1 {
+    margin: 0;
     img {
-      height: 90px;
+      width: 90px;
     }
   }
 `
 const HeaderContainer = styled.div `
+  color: white;
   position: relative;
   z-index: 2;
   margin: 0 auto;
   max-width: 960px;
   padding: 1.45rem 1.0875rem;
 `
+const NavLink = styled(Link) `
+  color: white;
+  text-decoration: none;
+`
+const HeaderBanner = styled.div `
+  display: flex;
+  div {
+    margin-left: 10px;
+  }
+`
 
 const Header = ({ data }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none"
-          }}
-        >
-          <img src={logo} alt="Niho Go Logo" />
-        </Link>
-      </h1>
-      <p>{data.site.siteMetadata.title}</p>
-      <p>{data.site.siteMetadata.desc}</p>
+      <HeaderBanner>
+        <h1>
+          <Link to="/">
+            <img src={logo} alt="Niho Go Logo" />
+          </Link>
+        </h1>
+        <div>
+          <p>{data.site.siteMetadata.title}</p>
+          <p>{data.site.siteMetadata.desc}</p>
+        </div>
+      </HeaderBanner>
       <nav>
-        <ul>
+        <ul style={{listStyleType:'none'}}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/courses">Courses</NavLink>
           </li>
         </ul>
       </nav>
@@ -59,6 +68,7 @@ const Header = ({ data }) => (
         top:0,
         width:'100%',
         height:'100%',
+        opacity: 0.3,
       }}
       sizes={data.background.sizes} />
   </HeaderWrapper>

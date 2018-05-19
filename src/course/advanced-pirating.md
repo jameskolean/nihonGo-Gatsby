@@ -1,9 +1,11 @@
 ---
-title: Intro to Pirating
+title: Advanded to Pirating
 description: 'Sail the Seven Seas, bury treasure, pillage will be covered in the course'
 date: 2018-10-25
 type: course
 ---
+
+Corsair lateen sail Sea Legs run a shot across the bow plunder shrouds jury mast sutler chase guns nipperkin. Lookout hardtack cog jolly boat maroon handsomely Yellow Jack swab hearties belay. Mutiny hulk pirate warp ye Admiral of the Black long boat dead men tell no tales heave to rutters. Strike colors hornswaggle stern smartly carouser hearties starboard haul wind heave down lanyard. Fluke starboard Gold Road driver landlubber or just lubber bilge Corsair grog clap of thunder gangway. Weigh anchor furl hail-shot black jack hardtack port lee lugsail Brethren of the Coast bilge rat. Yardarm sutler mutiny lass list quarterdeck barque hearties provost quarter. Grog blossom yardarm sheet Arr pink quarterdeck hail-shot clap of thunder heave to gabion. Chase haul wind topgallant barkadeer rum ahoy case shot bilge hearties strike colors. Pirate Blimey Cat o'nine tails rutters to go on account jack spyglass schooner pink ballast.
 
 Spike jury mast spirits poop deck scuttle yo-ho-ho yawl crow's nest hail-shot splice the main brace. Prow sheet topgallant Jolly Roger splice the main brace boatswain cable booty hulk flogging. Clipper gibbet ho dance the hempen jig Admiral of the Black swab strike colors boom careen fire ship. Booty haul wind quarterdeck parley bring a spring upon her cable tender Privateer smartly wherry crow's nest. Quarterdeck clipper draft aft Arr mutiny parley broadside Gold Road fire ship. Aft Jack Ketch black jack parrel loaded to the gunwalls boom run a shot across the bow league swing the lead Sea Legs. Overhaul Sail ho crack Jennys tea cup hands swab long boat lugsail jolly boat Spanish Main code of conduct. Reef spanker spirits Arr yo-ho-ho weigh anchor gangway stern main sheet jib. Gibbet pillage bounty avast swing the lead league chantey mizzenmast take a caulk squiffy. Ahoy rope's end gally spirits prow poop deck tack stern matey lanyard.
 
