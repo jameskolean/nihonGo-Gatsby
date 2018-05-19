@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <div>
     <h1>Hi people</h1>
     <p>Welcome to Nihon Go you site for learding. </p>
@@ -15,3 +15,14 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query SiteMeta {
+    site {
+      siteMetadata {
+        title
+        desc
+      }
+    }
+  }
+`;

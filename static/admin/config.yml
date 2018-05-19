@@ -21,7 +21,7 @@ collections:
     fields: 
       - {name: course, 
           label: Course,   
-          widget: "relation",
+          widget: "relation", 
           collection: "course",
           searchFields: ["title"],
           valueField: "title",
