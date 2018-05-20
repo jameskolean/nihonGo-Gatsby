@@ -26,7 +26,15 @@ export const query = graphql`
         title
         subtitle
         date(formatString: "MMMM DD YYYY")
+#        lessons {
+#          lesson {
+#            ...lessonDetails
+#          }
+#        }
       }
     }
   }
+#  fragment lessonDetails on course {
+#    title
+#  }
 `;

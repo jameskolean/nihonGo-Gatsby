@@ -1,5 +1,4 @@
 ---
-course: Intro to Pirating
 type: lesson
 date: 2018-10-25T00:00:00.000Z
 title: Finding a Crew
