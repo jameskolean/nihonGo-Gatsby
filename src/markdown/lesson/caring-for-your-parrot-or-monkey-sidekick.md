@@ -3,7 +3,7 @@ course: Intro to Pirating
 type: lesson
 date: 2018-10-25T00:00:00.000Z
 title: Caring for your Parrot or Monkey Sidekick
-description: >-
+---
   # Ahoy man-of-war
 
 
@@ -52,5 +52,4 @@ description: >-
   square-rigged wherry squiffy driver schooner Blimey Nelsons folly. Swing the
   lead fluke run a rig list yo-ho-ho booty Gold Road cog Yellow Jack Jolly
   Roger.
----
 

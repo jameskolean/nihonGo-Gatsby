@@ -3,7 +3,7 @@ course: Intro to Pirating
 type: lesson
 date: 2018-10-25T00:00:00.000Z
 title: Finding a Crew
-description: >-
+---
   # Sea Legs run a shot across the bow
 
 
@@ -163,9 +163,6 @@ description: >-
   barkadeer blow the man down broadside run a shot across the bow brigantine ye
   cog.
 
-
-
-
   Draft bilge water main sheet Corsair heave to crow's nest man-of-war lee
   gunwalls Jack Tar. Buccaneer hornswaggle pressgang yo-ho-ho six pounders grog
   blossom bilge smartly log Pirate Round. Lookout nipper list run a rig marooned
@@ -180,5 +177,4 @@ description: >-
   square-rigged wherry squiffy driver schooner Blimey Nelsons folly. Swing the
   lead fluke run a rig list yo-ho-ho booty Gold Road cog Yellow Jack Jolly
   Roger.
----
 

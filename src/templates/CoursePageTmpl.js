@@ -7,6 +7,7 @@ export default class CoursePageTmpl extends Component {
       <div>
         <span>{data.markdownRemark.frontmatter.date}</span>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
+        <h4>{data.markdownRemark.frontmatter.subtitle}</h4>
         <div
           dangerouslySetInnerHTML={{
             __html: data.markdownRemark.html
@@ -23,6 +24,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        subtitle
         date(formatString: "MMMM DD YYYY")
       }
     }

@@ -1,6 +1,6 @@
 ---
 title: Advanded to Pirating
-description: 'Sail the Seven Seas, bury treasure, pillage will be covered in the course'
+subtitle: 'Sail the Seven Seas, bury treasure, pillage will be covered in the course'
 date: 2018-10-25
 type: course
 ---
