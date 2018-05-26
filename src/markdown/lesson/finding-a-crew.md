@@ -2,6 +2,7 @@
 type: lesson
 date: 2018-10-25T00:00:00.000Z
 title: Finding a Crew
+course: Intro to Pirating
 ---
   # Sea Legs run a shot across the bow
 

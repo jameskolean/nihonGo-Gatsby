@@ -67,3 +67,55 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     });
   });
 };
+
+exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
+  const { createNodeField } = boundActionCreators;
+  const lessonsInCourses = {};
+  const addcourseToLesson = (node, name, value) => {
+    createNodeField({
+        node,
+        name: name,
+        value: value
+    });
+  }
+
+  // iterate thorugh all markdown nodes to link lessons to courses
+  // and build author index
+  const markdownNodes = getNodes()
+    .filter(node => node.internal.type === "MarkdownRemark")
+    .forEach(lesson => {
+      if (lesson.frontmatter.course) {
+        const courseNode = getNodes().find( node2 => 
+            node2.internal.type === "MarkdownRemark" &&
+            node2.frontmatter.title === lesson.frontmatter.course);
+        if (courseNode) {
+          addcourseToLesson(lesson, "course", courseNode.id);
+          // if it's first time for this course init empty array for his posts
+          if (!(courseNode.id in lessonsInCourses)) {
+            lessonsInCourses[courseNode.id] = [];
+          }
+          // add lesson to this course
+          lessonsInCourses[courseNode.id].push(lesson);
+        }
+      }
+    });
+
+  Object.entries(lessonsInCourses).forEach(([courseNodeId, lessons]) => {
+    createNodeField({
+      node: getNode(courseNodeId),
+      name: "lessons",
+      value: lessons,
+    });
+  });
+  getNodes().filter(node => node.internal.type === "MarkdownRemark" && 
+      "course" == node.frontmatter.type &&
+      !node.fields.lessons)
+    .forEach(node => {
+      createNodeField({
+        node: node,
+        name: "lessons",
+        value: [],
+      });
+    });
+};
+

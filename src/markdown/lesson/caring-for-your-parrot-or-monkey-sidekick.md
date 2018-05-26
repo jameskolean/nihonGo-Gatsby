@@ -2,6 +2,7 @@
 type: lesson
 date: 2018-10-25T00:00:00.000Z
 title: Caring for your Parrot or Monkey Sidekick
+course: Intro to Pirating
 ---
   # Ahoy man-of-war
 

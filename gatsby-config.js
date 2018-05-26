@@ -1,4 +1,8 @@
 module.exports = {
+  mapping: {
+    "MarkdownRemark.fields.course": "MarkdownRemark",
+    "MarkdownRemark.fields.lesson": "MarkdownRemark",
+  },
   siteMetadata: {
     title: 'Nihon Go',
     desc: 'Your learning resource center',

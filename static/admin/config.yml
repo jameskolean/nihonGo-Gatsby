@@ -18,21 +18,21 @@ collections:
       - {name: type, label: Type, widget: "select", options: ["course", "lesson"]}
       - {name: date, label: "Update Date", widget: date}
       - {name: body, label: Description, widget: markdown}
-      - {name: lessons,   
-          label: Lessons,   
-          widget: "relation", 
-          collection: "lesson",
-          searchFields: ["title"],
-          valueField: "title",
-          displayFields: ["title"]
-        }
-
+ 
   - name: lesson
     label: Lesson 
     folder: src/markdown/lesson
     create: true
     fields: 
       - {name: type, label: Type, widget: "select", options: ["course", "lesson"]}
+      - {name: course,   
+          label: Course,   
+          widget: "relation", 
+          collection: "course",
+          searchFields: ["title"],
+          valueField: "title",
+          displayFields: ["title", "subtitle", "date"]
+        }
       - {name: date, label: "Update Date", widget: date}
       - {name: title, label: Title}
       - {name: body, label: Lesson, widget: markdown}
