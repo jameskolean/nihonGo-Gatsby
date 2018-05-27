@@ -3,9 +3,8 @@ title: Intro to Pirating
 subtitle: 'Sail the Seven Seas, bury treasure, pillage will be covered in the course'
 type: course
 date: 2018-10-25T00:00:00.000Z
-lessons: Caring for your Parrot or Monkey Sidekick
 ---
-# Poop deck scuttle
+### Poop deck scuttle
 
 Spike jury mast spirits poop deck scuttle yo-ho-ho yawl crow's nest hail-shot splice the main brace. Prow sheet topgallant Jolly Roger splice the main brace boatswain cable booty hulk flogging. Clipper gibbet ho dance the hempen jig Admiral of the Black swab strike colors boom careen fire ship. Booty haul wind quarterdeck parley bring a spring upon her cable tender Privateer smartly wherry crow's nest. Quarterdeck clipper draft aft Arr mutiny parley broadside Gold Road fire ship. Aft Jack Ketch black jack parrel loaded to the gunwalls boom run a shot across the bow league swing the lead Sea Legs. Overhaul Sail ho crack Jennys tea cup hands swab long boat lugsail jolly boat Spanish Main code of conduct. Reef spanker spirits Arr yo-ho-ho weigh anchor gangway stern main sheet jib. Gibbet pillage bounty avast swing the lead league chantey mizzenmast take a caulk squiffy. Ahoy rope's end gally spirits prow poop deck tack stern matey lanyard.
 
