@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import LessonListing from "../components/course/lesson-listing";
 
 export default class CoursePageTmpl extends Component {
+  componentDidMount() {
+    console.log('I just loaded yipee')
+  }
   render() {
     const { data } = this.props;
 //    data.markdownRemark.fields.lessons.map(node => console.log(node));
