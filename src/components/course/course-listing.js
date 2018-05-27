@@ -3,14 +3,12 @@ import Link from "gatsby-link";
 
 const CourseListing = ({ course }) => (
   <article>
-    <h2><Link to={course.fields.slug}>{course.frontmatter.title}</Link></h2>
-    <div>{course.frontmatter.date}</div>
-    <h4>{course.frontmatter.subtitle}</h4>
+    <hr/>
+    <h4>
+      <Link to={course.fields.slug}>{course.frontmatter.title}</Link>
+    </h4>
+    <h5>{course.frontmatter.subtitle}</h5>
     <p>{course.excerpt}</p>
-    {/* <div
-      dangerouslySetInnerHTML={{
-        __html: course.html
-      }}/>   */}
   </article>
 );
 

@@ -38,16 +38,16 @@ const HeaderBanner = styled.div `
 
 const Header = ({ data }) => (
   <HeaderWrapper>
-    <HeaderContainer>
-      <HeaderBanner>
+    <HeaderContainer className="header">
+      <HeaderBanner className="banner">
         <h1>
           <Link to="/">
             <img src={logo} alt="Niho Go Logo" />
           </Link>
         </h1>
         <div>
-          <p>{data.site.siteMetadata.title}</p>
-          <p>{data.site.siteMetadata.desc}</p>
+          <h1>{data.site.siteMetadata.title}</h1>
+          <h3>{data.site.siteMetadata.desc}</h3>
         </div>
       </HeaderBanner>
       <nav>

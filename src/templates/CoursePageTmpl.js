@@ -14,7 +14,7 @@ constructor(props) {
 }
 
 componentDidMount() {
-  axios.get('https://randomuser.me/api/')
+  axios.get('https://randomuser.me/api?results=2')
     .then(res => {
       const users = res.data.results.map(obj => obj);
       this.setState({ users });
@@ -24,35 +24,30 @@ componentDidMount() {
 
 render() {
     const { data } = this.props;
-//    data.markdownRemark.fields.lessons.map(node => console.log(node));
-//    console.log(data.markdownRemark.fields.lessons);
     return (
-      <div>
-        <span>{data.markdownRemark.frontmatter.date}</span>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <h4>{data.markdownRemark.frontmatter.subtitle}</h4>
-        <h4>User List</h4>
+      <article>
+        <h2>{data.markdownRemark.frontmatter.title}</h2>
+        <h5>{data.markdownRemark.frontmatter.subtitle}</h5>
+        <h3>Students currently logged in</h3>
         <ul>
-          {this.state.users.map(user =>
-            <li key={user.id.value}>{user.name.first} {user.name.last}</li>
-          )}
+          {this.state.users.map(user => { 
+            console.log(user.id.value);
+            return (<li key={user.id.value}>{user.name.first} {user.name.last}</li>)
+          })}
         </ul>
+        <h3>Lessons</h3>
         {data.markdownRemark.fields.lessons.map( node  => (
           <LessonListing key={node.id} lesson={node} />
-          // <LessonListing lesson={node} />
         ))}
-        <h4>Lessons</h4>
-        {data.markdownRemark.fields.lessons.map( node  => (
-          <LessonListing key={node.id} lesson={node} />
-          // <LessonListing lesson={node} />
-        ))}
-
+        <hr/>
         <div
           dangerouslySetInnerHTML={{
             __html: data.markdownRemark.html
           }}
         />
-      </div>
+        <span>{data.markdownRemark.frontmatter.date}</span>
+
+      </article>
     );
   }
 }
